@@ -1,8 +1,8 @@
 
 
-def main():
+def main(input: str):
     try:
-        a, b, c = (input().split(" "))
+        a, b, c = input.split(" ")
         num1 = int(a)
         num2 = int(c)
         if num1 > 10 or num2 > 10:
@@ -22,4 +22,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    user_input = input()
+    main(user_input)
